@@ -1,0 +1,143 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR: #7851a9
+COLOR: #990000
+GRAY COLOR: #343a40
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(120, 81, 169, 0.75),
+      rgba(171, 146, 203, 0.75)
+    ),
+    url(images/bible.jpeg);
+  background-size: cover;
+  color: #fff;
+}
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.header-container {
+  position: relative;
+
+  /* In relation to PARENT size */
+  /* left: 50%;
+  top: 50%; */
+
+  /* In relation to ELEMENT size */
+  /* transform: translate(-61.5%, -50%); */
+  transform: translateY(-65px);
+}
+
+.logo {
+  position: relative;
+  transform: translateY(-20px);
+  width: 150px;
+  height: auto;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 48px;
+}
+
+section {
+  padding: 96px 0;
+  background-color: #fff;
+  /* position: relative; */
+}
+
+footer {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.scripture-title {
+  margin-top: 15%;
+  padding: 8px 10px 5px 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.scripture-text {
+  max-width: 40%;
+  padding-left: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.alternate-bg {
+  background-image: linear-gradient(
+    rgba(120, 81, 169, 0.75),
+    rgba(171, 146, 203, 0.75)
+  );
+  /* url(images/bible.jpeg); */
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  z-index: -1;
+}
+.card-title {
+  font-size: 2.2rem;
+  font-family: "Roboto Slab serif";
+  font-weight: 700;
+}
+
+.first-word {
+  color: #7851a9;
+}
