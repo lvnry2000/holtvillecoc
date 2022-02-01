@@ -246,3 +246,16 @@ article > h2 {
   justify-content: center;
   align-items: center;
 }
+
+.ministries {
+  display: flex;
+  flex-direction: column;
+}
+.ministries > p {
+  padding: 0 20px;
+}
+
+.prayer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
