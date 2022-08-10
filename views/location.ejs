@@ -1,0 +1,31 @@
+<%- include("partials/header") -%>
+    </header>
+    <article class="directions">
+      <h2>Get Directions to Worship Services</h2>
+      <form action="http://maps.google.com/maps" method="get" target="_blank">
+        Enter your starting address:
+        <input type="text" name="saddr" />
+        <input type="hidden" name="daddr" value="440 W 6th, Holtville, CA" />
+        <input class="btn" type="submit" value="get directions" />
+      </form>
+    </article>
+    <section>
+      <footer>
+        <div class="copyright">
+          &copy; Copyright 2022 Holtville Church of Christ
+        </div>
+        <div>
+          <a href="https://www.facebook.com/holtvillecoc" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://twitter.com/holtvillec" target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+          <a href="https://www.instagram.com/holtvillecoc/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </div>
+<%- include("partials/footer") -%>
+     
+
+

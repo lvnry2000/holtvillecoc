@@ -17,9 +17,15 @@ GRAY COLOR: #343a40
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  }
+  
 body {
   font-family: "Roboto", sans-serif;
   color: #444;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -64,11 +70,12 @@ header {
   background-repeat: no-repeat;
 }
 nav {
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 2.25rem;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .header-container {
@@ -94,7 +101,13 @@ h1 {
   margin-bottom: 32px;
   line-height: 1.05;
 }
+h3{
+  font-size: 1.75rem;
+}
 
+h6{
+  font-size: 1.25rem;
+}
 p {
   font-size: 20px;
   line-height: 1.6;
@@ -114,7 +127,8 @@ p {
 } */
 
 div > h2 {
-  font-size: 42px;
+  /*font-size: 42px;*/
+  font-size: 4rem;
   margin-bottom: 48px;
   font-family: "Roboto Slab";
   display: inline;
@@ -128,6 +142,7 @@ section {
 footer {
   text-align: right;
   padding-right: 10px;
+  padding-top: 10px;
 }
 
 .scripture-title {
@@ -136,7 +151,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/
+  font-size: 3.5rem;
   display: inline-block;
 }
 
@@ -146,7 +162,9 @@ footer {
   padding-top: 10px;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 1.2rem;
+  /*font-size: 1.2rem;*/
+   font-size: 2rem;
+
 }
 
 .bottom {
@@ -173,6 +191,7 @@ footer {
 .btn {
   background-color: #7851a9;
   color: #fff;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 .column {
@@ -191,6 +210,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
+  /*font-size: 1.5rem;*/
 }
 
 .space {
@@ -226,7 +246,7 @@ footer {
   justify-content: space-between;
 }
 .copyright {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .directions {
@@ -255,7 +275,156 @@ article > h2 {
   padding: 0 20px;
 }
 
-.prayer {
+.prayer-request{
+  color: #fff;
+  background-image: linear-gradient(
+     /*rgba(120, 81, 169, 0.75),  rgba(120, 81, 169, 0.75)*/
+    rgba(171, 146, 203, 0.75),
+    rgba(171, 146, 203, 0.75)
+  );
+}
+/*.prayer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}*/
+
+.hidden1 {
+  visibility: hidden;
+}
+.hidden2 {
+  display: none;
+}
+/* Calendar Styles */
+.calendar-container {
+  width: 100%;
+  height: 75vh;
+  background-color: #fff;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  background-color: #ab92cb;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0, 0.4);
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #7851a9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+.month p {
+  font-size: 1.6rem;
+}
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: cennter;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0, 0.5);
+}
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3 0.5 rgba(0, 0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+.days div:hover:not(.today) {
+  background-color: #7851a9;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+.today {
+  background-color: #7851a9;
+}
+
+/* Contact Form */
+.contact{
+  /*background:#f9feff;*/
+  background-image: linear-gradient(
+     /*rgba(120, 81, 169, 0.75),  rgba(120, 81, 169, 0.75)*/
+    rgba(171, 146, 203, 0.75),
+    rgba(171, 146, 203, 0.75)
+  );
+
+}
+
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr;
+  /*grid-gap:20px;*/
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+
+.company-info ul{
+  list-style: none;
+  padding:0;
+}
+ion-icon{
+  
+  padding-right:15px;
+}
+.center {
+  /*display: block;*/
+  margin: auto;
+  margin-right: 10px;
+/*align-items: center;
+justify-content: center;*/
+  /*width: 50%*/;
 }

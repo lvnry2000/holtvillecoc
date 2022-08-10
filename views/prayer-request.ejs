@@ -1,0 +1,68 @@
+<%- include("partials/header") -%>
+  </header>
+  <section class="prayer-request">
+    <div class="row">
+      <!-- <div class="company-info"> -->
+        <div class="col">
+          <h2 class="space">God Hears you</h2>
+          <p class="space"><sup><strong>16</strong></sup> Confess your faults one to another, and pray one for another, that ye may be healed. The effectual fervent prayer of a righteous man availeth much. <strong>James 5:16</strong></p>
+        </div>
+      <div class="col contact wrapper">
+        
+        <!-- <div class="wrapper"> -->
+          <div class="center">
+            <img src="/images/prayer3.jpeg">
+           <!--  <h3>Holtville Church of Christ</h3>
+            <ul>
+              <li><ion-icon name="home-outline"></ion-icon>440 W. 6<sup>th</sup> St.</li>
+              <li><ion-icon name="call-outline"></ion-icon>(760) 756-3207</li>
+              <li><ion-icon name="mail-outline"></ion-icon>contact@holtvillecoc.com</li>
+            </ul> -->
+          </div>
+          <div>
+            <h2 class="space">Prayer Request</h2>
+            <form method="post" action="/prayer-request"class="space">
+              <div class="row mb-3">
+                <div class="col-sm-9">
+                  <input type="text" class="form-control form-control-lg" name="fname" id="fname" placeholder="First Name"/>
+                </div>
+              </div>      
+              <div class="row mb-3">
+                <div class="col-sm-9">
+                  <input type="text" class="form-control form-control-lg" name="lname" id="lname" placeholder="Last Name"/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-9">
+                  <input type="email" class="form-control form-control-lg" placeholder="Email" name="email" id="email"/>
+                </div>
+              </div>         
+              <div class="row mb-3">
+                <div class="col-sm-9"></div>
+              </div>    
+              <div class="row mb-3">
+                <div class="col-sm-10">
+                  <input type="hidden" name="subject" value="Prayer Request Submission" id="subject"/>
+                </div>
+              </div>      
+              <div class="row mb-3">
+                <div class="col-sm-9">
+                  <textarea class="form-control form-control-lg" placeholder="Message" name="message" rows="5" id="message"></textarea>
+                </div>
+              </div>          
+              <div class="row mb-3">
+                <div class="col-sm-9"></div>
+              </div>          
+              <div class="row mb-3">
+                <div class="d-grid col-sm-9">
+                  <button type="submit" class="btn">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+  <section class="bottom space">
+<%- include("partials/footer") -%>

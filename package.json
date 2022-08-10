@@ -1,25 +1,17 @@
 {
-  "name": "holtvillecoc",
+  "name": "sandbox",
   "version": "1.0.0",
-  "description": "",
-  "main": "calendar.js",
+  "description": "test",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lvnry2000/holtvillecoc.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Alvin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lvnry2000/holtvillecoc/issues"
-  },
-  "homepage": "https://github.com/lvnry2000/holtvillecoc#readme",
   "dependencies": {
-    "body-parser": "^1.19.1",
-    "express": "^4.17.2",
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
     "nodemailer": "^6.7.2"
   }
 }
