@@ -193,14 +193,20 @@ footer {
   color: #fff;
   font-size: 1.5rem;
   margin-bottom: 15px;
+
+}
+#submit-btn {
+    cursor: not-allowed;
 }
 .column {
   padding: 0;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-rows: 300px ;
+  /* grid-template-rows: 300px 300px; */
   /* grid-template-rows: 1fr 1fr; */
 }
 
