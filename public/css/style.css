@@ -33,14 +33,15 @@ body {
 }
 
 header {
-  height: 75vh;
+  height: 65vh;
   position: relative;
   background-image: linear-gradient(
       rgba(120, 81, 169, 0.75),
       rgba(171, 146, 203, 0.75)
     ),
     url(../images/bible.jpeg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: #fff;
 }
 .building {
@@ -148,7 +149,7 @@ footer {
 .scripture-title {
   margin-top: 5%;
   padding: 8px 20px 5px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   font-family: "Roboto Slab";
   font-weight: 700;
   /*font-size: 2.5rem;*/
@@ -157,7 +158,8 @@ footer {
 }
 
 .scripture-text {
-  max-width: 40%;
+  /* max-width: 40%; */
+  max-width: 100%;
   padding-left: 20px;
   padding-top: 10px;
   font-family: "Roboto";
@@ -202,7 +204,7 @@ footer {
   padding: 0;
 }
 .grid-container {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr;
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-rows: 300px ;
